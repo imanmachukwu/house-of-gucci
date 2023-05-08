@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Typograph Pro";
+    src: url(fonts/TYPOGRAPH\ PRO\ Semi\ Bold.ttf) format(TrueType);
+}
+@font-face {
+    font-family: "Teodor";
+    src: url(fonts/TeodorTRIAL-Regular.woff);
+}
+@font-face {
+    font-family: "Neue Montreal";
+    src: url(fonts/PPNeueMontreal-Book.otf) format(OpenType);
+}
+
+body {
+    background: #f7f7f7;
+    color: #2f2e2c;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+}
+
+#hero {
+    color: #302d2d;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header-link {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.subtext {
+
+}
+
+.header-links {
+    font-family: "Teodor", serif;
+    letter-spacing: -0.7px;
+    font-size: 45px;
+    line-height: 44px;
+}
+
+.header-links > span {
+    font-size: 21px;
+}
+
+.menu {
+    color: #ececec;
+    mix-blend-mode: exclusion;
+    border-bottom: 2px #2f2e2c solid;
+    font-size: 18px;
+    
+}
+
+#hero-title {
+    font-family: "Typograph Pro", sans-serif;
+    font-size: 76px;
+    letter-spacing: -4.3px;
+    
+    width: 20%;
+    text-align: center;
+}
+
+#hero-title > h1 {
+    max-width: 510px;
+}
+
+#hero-title, .subtext {
+    text-transform: uppercase;
+}
+
+#hero-subtitle {
+    font-family: "Neue Montreal", sans-serif;
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+#hero-subtitle > h3 {
+    max-width: 900px;
+}
+
+#hero-title, #hero-subtitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
