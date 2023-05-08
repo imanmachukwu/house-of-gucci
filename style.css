@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    cursor: default;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,6 +35,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    justify-content: center;
+    width: 100%;
 }
 
 .header-link {
@@ -62,7 +65,7 @@ body {
     mix-blend-mode: exclusion;
     border-bottom: 2px #2f2e2c solid;
     font-size: 18px;
-    
+    padding: 4px 8px;
 }
 
 #hero-title {
@@ -82,11 +85,23 @@ body {
     text-transform: uppercase;
 }
 
-#hero-subtitle {
+.hero-subtitle {
     font-family: "Neue Montreal", sans-serif;
     font-size: 28px;
-    line-height: 30px;
+    line-height: 34px;
     font-weight: 500;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-subtitle > h3 {
+    max-width: 960px;
+}
+
+.hero-subtitle > p {
+    max-width: 960px;
 }
 
 #hero-subtitle > h3 {
@@ -97,5 +112,35 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+
+.hero-section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;
+}
+
+.hn {
+    width: 100%;
+    font-size: 18px;
+    font-family: "Teodor", serif;
+    display: flex;
+    justify-content: center;
+}
+
+.h1-title {
+    line-height: 120px;
+    font-family: "Teodor", serif;
+    display: flex;
+    justify-content: center;
+}
+
+.h1-title > h1 {
+    font-size: 123px;
+    max-width: 680px;
     text-align: center;
 }
